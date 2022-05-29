@@ -9,8 +9,8 @@ import TableBasic from 'src/views/tables/TableBasic'
 
 const InsCompanyEdit = () => {
   const router = useRouter()
-  
   const { id } = router.query
+  
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>
