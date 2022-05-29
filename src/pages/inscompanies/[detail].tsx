@@ -10,6 +10,10 @@ import TableBasic from 'src/views/tables/TableBasic'
 const InsCompanyDetail = () => {
   const router = useRouter()
   const { detail } = router.query
+  debugger;
+  if(!Number.isInteger(Number(detail))){
+    return (<></>);
+  }
 
   return (
     <Grid container spacing={6}>

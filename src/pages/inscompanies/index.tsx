@@ -6,6 +6,7 @@ import CardHeader from '@mui/material/CardHeader'
 
 // ** Demo Components Imports
 import TableBasic from 'src/views/tables/TableBasic'
+import { CardContent } from '@mui/material'
 
 const InsCompanies = () => {
   return (
@@ -14,6 +15,9 @@ const InsCompanies = () => {
         <Card>
           <CardHeader title='Страховые компании' titleTypographyProps={{ variant: 'h6' }} />
           {/* <TableBasic /> */}
+          <CardContent>
+            <Link href='/inscompanies/1'>Перейти на конкретную компанию</Link>
+          </CardContent>
         </Card>
       </Grid>
     </Grid> 
