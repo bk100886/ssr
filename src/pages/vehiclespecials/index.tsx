@@ -12,7 +12,7 @@ const VehicleSpecials = () => {
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>
-          <CardHeader title='All companies' titleTypographyProps={{ variant: 'h6' }} />
+          <CardHeader title='Особые уловия использования ТС' titleTypographyProps={{ variant: 'h6' }} />
           <TableBasic />
         </Card>
       </Grid>
