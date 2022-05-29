@@ -10,6 +10,10 @@ import TableBasic from 'src/views/tables/TableBasic'
 const InsSelectConfitionDetail = () => {
   const router = useRouter()
   const { detail } = router.query
+  
+  if(!Number.isInteger(Number(detail))){
+    return (<></>)
+  }
 
   return (
     <Grid container spacing={6}>

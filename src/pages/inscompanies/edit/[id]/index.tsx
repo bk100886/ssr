@@ -7,19 +7,15 @@ import { useRouter } from 'next/router'
 // ** Demo Components Imports
 import TableBasic from 'src/views/tables/TableBasic'
 
-const InsCompanyDetail = () => {
+const InsCompanyEdit = () => {
   const router = useRouter()
-  const { detail } = router.query
-  debugger;
-  if(!Number.isInteger(Number(detail))){
-    return (<></>);
-  }
-
+  
+  const { id } = router.query
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>
-          <CardHeader title={"Detail "+detail} titleTypographyProps={{ variant: 'h6' }} />
+          <CardHeader title={"Detail "+id} titleTypographyProps={{ variant: 'h6' }} />
           <TableBasic />
         </Card>
       </Grid>
@@ -29,4 +25,4 @@ const InsCompanyDetail = () => {
 
 
 
-export default InsCompanyDetail
+export default InsCompanyEdit

@@ -11,6 +11,10 @@ const RegionDetail = () => {
   const router = useRouter()
   const { detail } = router.query
 
+  if(!Number.isInteger(Number(detail))){
+    return (<></>)
+  }
+  
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>
